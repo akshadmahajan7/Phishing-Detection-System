@@ -83,5 +83,5 @@ We highly value contributions! By tackling one of the points below, you can help
 ---
 
 ## 📝 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License.<br>
 You can find the full license text here: [LICENSE](LICENSE)
