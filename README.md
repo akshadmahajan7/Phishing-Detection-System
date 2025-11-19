@@ -36,6 +36,32 @@ URLs that pass the rule-based check are subjected to detailed analysis by the tr
 
 ---
 
+## 📁 Project Structure
+```
+Phishing-Detection-System/
+├── src/
+│   ├── rule_based/
+│   │   └── detector.py       # CODE START HERE: Implements heuristic checks (URL length, @, etc.).
+│   ├── ml_model/
+│   │   ├── feature_extractor.py # Logic for extracting features (WHOIS, SSL, Lexical).
+│   │   ├── trainer.py           # Script to load data, train the ML model, and save it.
+│   │   └── model.pkl          # Placeholder for the trained classifier model.
+│   └── utils/
+│       └── data_loader.py       # Handles dataset loading (UCI) and potential PhishTank API calls.
+├── app/
+│   ├── templates/
+│   │   ├── index.html         # HTML form for URL input.
+│   │   └── result.html        # HTML page to display prediction.
+│   └── main.py              # Flask application entry point, calls the detection functions.
+├── notebooks/
+│   └── model_training.ipynb # Jupyter notebook for EDA and initial model selection.
+├── requirements.txt         # List of all necessary Python dependencies.
+├── README.md                # Project documentation.
+└── LICENSE                  # License file.
+```
+
+---
+
 ## 🚀 Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
