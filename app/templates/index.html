@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection System</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        h1 { color: #333; text-align: center; }
+        form { display: flex; flex-direction: column; }
+        input[type="text"] { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; }
+        input[type="submit"] { padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        input[type="submit"]:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>🎣 Phishing Detector</h1>
+    <p>Enter a URL below to check if it exhibits signs of a phishing attempt.</p>
+    <form method="POST" action="/predict">
+        <label for="url_input">URL to Analyze:</label>
+        <input type="text" id="url_input" name="url_input" placeholder="e.g., https://www.suspicious-login.com" required>
+        <input type="submit" value="Analyze URL">
+    </form>
+</body>
+</html>

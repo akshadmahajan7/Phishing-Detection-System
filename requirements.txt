@@ -1,0 +1,20 @@
+# Phishing Detection System Dependencies
+
+# --- Web Framework ---
+Flask>=3.0.0
+
+# --- Data Manipulation ---
+pandas>=2.1.4
+numpy>=1.26.2
+
+# --- Machine Learning ---
+scikit-learn>=1.3.2       # Core ML library
+joblib>=1.3.2             # For saving and loading the trained model (model.pkl)
+
+# --- Web Requests & Networking ---
+requests>=2.31.0          # For fetching external data (SSL checks, etc.)
+python-whois>=0.8.0       # For WHOIS lookups (Domain Age, Registration Info)
+
+# --- URL Handling ---
+# No external package needed, as standard 'urllib.parse' is sufficient, 
+# but included for clarity if additional URL tools were used.
